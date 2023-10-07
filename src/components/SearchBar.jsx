@@ -3,8 +3,10 @@ import React, { useState } from "react";
 function SearchBar({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const handleSearch = () => {
-    onSearch(searchTerm);
+  const handleSearch = (e) => {
+    const value = e.target.value;
+    setSearchTerm(value);
+    onSearch(value);
   };
 
   return (
@@ -13,9 +15,8 @@ function SearchBar({ onSearch }) {
         type="text"
         placeholder="Cari catatan..."
         value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
+        onChange={(e) => handleSearch(e)}
       />
-      <button onClick={handleSearch}>Cari</button>
     </div>
   );
 }
