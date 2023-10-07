@@ -165,6 +165,63 @@ input::placeholder, textarea::placeholder {
   color: #b00020;
 }
 
+/* Archive List */
+.archive-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(min-content, max-content);
+  gap: 16px;
+  width: 20%;
+  margin-bottom: 48px;
+}
+
+.archive-item {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.archive-item__content {
+  padding: 12px;
+  flex: 1;
+}
+
+.archive-item__title{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 4px;
+}
+
+.archive-item__date {
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #aaa;
+}
+
+.archive-item__body{
+  font-size: 14px;
+}
+
+.archive-item__actions {
+  display: flex;
+}
+
+.archive-item__unarchive-button{
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  border-top: 1px solid #aaa;
+  padding: 8px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: #c49000;
+}
+
 @media only screen and (min-width: 500px) {
   .notes-list {
     grid-template-columns: 1fr 1fr;
