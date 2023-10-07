@@ -1,6 +1,6 @@
 ## Getting Started with Create React App.
 
-The result of deploying the application using Vercel app[React Notes Application](https://react-note-application.vercel.app/).
+The result of deploying the application using Vercel app [React Notes Application](https://react-note-application.vercel.app/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
